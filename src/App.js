@@ -2,15 +2,15 @@ import './App.css';
 import Header from './MyComponents/Header';
 import  Todos from './MyComponents/Todos';
 import Footer  from './MyComponents/Footer'; 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import AddTodo  from './MyComponents/AddTodo';
 import About from './MyComponents/About';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 function App() {
     let initTodo;
@@ -58,15 +58,16 @@ function App() {
   
   return (
     <>
-    <Router>
+    {/* <Router>
       <Header/>
       <Switch>
         <Route exact path="/" render={()=>{
-          return(
+          return( */}
             <>
               <AddTodo addTodo={addTodo}/>
               <Todos todos={todos} onDelete={onDelete}/>
-            </> )
+            </> 
+            {/* )
           }}> 
         </Route>
         <Route exact path="/about">
@@ -75,7 +76,7 @@ function App() {
       </Switch>
       
       <Footer/>
-    </Router>
+    </Router> */}
     </>
   );
 }
