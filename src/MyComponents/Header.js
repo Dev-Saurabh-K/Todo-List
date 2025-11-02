@@ -7,12 +7,12 @@ export default function Header() {
   return (
     <Navbar bg="primary" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand to="#home">Todods List</Navbar.Brand>
+          <Navbar.Brand to="#home">To-Do App</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link to="#home">Home</Nav.Link>
             <Nav.Link to="/about">About</Nav.Link>
           </Nav>
         </Container>
-      </Navbar>
+    </Navbar>
   )
 }

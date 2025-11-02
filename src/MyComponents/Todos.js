@@ -4,7 +4,7 @@ import TodoItem from './TodoItem';
 export const Todos = (props) => {
   return (
     <div className='container' style={{minHeight: "70vh", margin: "40px auto"}}>
-      <h3 className='my-3'>Todo List</h3>
+      <h3 className='my-3'>To-Do List</h3>
       {props.todos.length===0? "No Todos to display": 
       props.todos.map((todo)=> {
         return(

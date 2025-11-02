@@ -19,14 +19,14 @@ const AddTodo = ({addTodo}) => {
 
     return (
      <form className='container' onSubmit={submit}>
-        <h3 className='my-3'>Add a Todo</h3>
+        <h3 className='my-3'>Add a To-Do</h3>
         <div className="mb-3">
-           <label htmlFor="title" className="form-label">Todo Title</label>
+           <label htmlFor="title" className="form-label">To-Do Title</label>
            <input type="text" value={title} onChange={(e)=>setTitle(e.target.value)} className="form-control" id="title" aria-describedby="emailHelp"/>
         </div>
 
         <div className="mb-3">
-          <label htmlFor="desc" className="form-label">Todo Description</label>
+          <label htmlFor="desc" className="form-label">To-Do Description</label>
           <input type="text" value={desc} onChange={(e)=>setDesc(e.target.value)} className="form-control" id="desc"/>
         </div>
         
